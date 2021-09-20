@@ -1,0 +1,20 @@
+{
+  "name": "boospot/sgb",
+  "description": "Skeleton for WordPress Plugin Boilerplate with Namespace and Gutenberg Block support",
+  "type": "wordpress-plugin",
+  "license": "GPL2",
+  "authors": [
+    {
+      "name": "Rao",
+      "email": "rao@booskills.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "classmap": [
+      "includes",
+      "admin",
+      "public"
+    ]
+  }
+}
