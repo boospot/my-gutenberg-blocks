@@ -248,6 +248,10 @@ class Init {
 		$this->loader->add_action( 'init', $this->blocks, 'register_blocks' );
 
 		/**
+		 * Register Dynamic Blocks
+		 */
+		$this->loader->add_action( 'init', $this->blocks, 'register_dynamic_blocks' );
+		/**
 		 * Only for Editor (admin)
 		 */
 		$this->loader->add_action( 'enqueue_block_editor_assets', $this->blocks, 'enqueue_block_editor_assets' );

@@ -74,6 +74,7 @@ class Front {
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
+		wp_enqueue_style( 'ui-kit', trailingslashit( MY_GUTENBERG_BLOCKS_URL_PATH ) . 'public/css/uikit.min.css', array(), '3.6.16', 'all' );
 
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/public.css', array(), $this->version, 'all' );
 
@@ -97,6 +98,10 @@ class Front {
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
+		wp_enqueue_script( 'ui-kit', trailingslashit( MY_GUTENBERG_BLOCKS_URL_PATH ) . 'public/js/uikit.min.js', array(), '3.6.16', true );
+
+		// Ui-Kit Icons https://getuikit.com/docs/installation
+		wp_enqueue_script( 'ui-kit-icons', trailingslashit( MY_GUTENBERG_BLOCKS_URL_PATH ) . 'public/js/uikit-icons.min.js', array(), '3.6.16', true );
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/public.js', array( 'jquery' ), $this->version, false );
 
