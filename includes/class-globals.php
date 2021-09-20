@@ -2,14 +2,14 @@
 
 /** @noinspection CheckEmptyScriptTag */
 
-namespace SkeletonGutenbergBlocks;
+namespace MyGutenbergBlocks;
 // exit if file is called directly
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
 // if class already defined, bail out
-if ( class_exists( 'SkeletonGutenbergBlocks\Globals' ) ) {
+if ( class_exists( 'MyGutenbergBlocks\Globals' ) ) {
 	return;
 }
 
@@ -27,7 +27,7 @@ class Globals {
 	 * @var
 	 */
 	protected static $options = array();
-	protected static $prefix = 'skeleton_gutenberg_blocks_';
+	protected static $prefix = 'my_gutenberg_blocks_';
 	/**
 	 * The ID of this plugin.
 	 *
@@ -128,7 +128,7 @@ class Globals {
 
 		$default_options = array();
 
-		$default_options = apply_filters( 'skeleton_gutenberg_blocks_admin_settings_default', $default_options );
+		$default_options = apply_filters( 'my_gutenberg_blocks_admin_settings_default', $default_options );
 
 		return $default_options;
 	}
@@ -136,7 +136,7 @@ class Globals {
 
 	/** @noinspection PhpUnused */
 	public static function get_meta_prefix() {
-		return apply_filters( 'skeleton_gutenberg_blocks_global_meta_prefix', static::$prefix );
+		return apply_filters( 'my_gutenberg_blocks_global_meta_prefix', static::$prefix );
 	}
 
 

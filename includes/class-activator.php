@@ -1,13 +1,13 @@
 <?php
-namespace SkeletonGutenbergBlocks;
+namespace MyGutenbergBlocks;
 /**
  * Fired during plugin activation
  *
  * @link       https://booskills.com/rao
  * @since      1.0.0
  *
- * @package    SkeletonGutenbergBlocks
- * @subpackage SkeletonGutenbergBlocks/includes
+ * @package    MyGutenbergBlocks
+ * @subpackage MyGutenbergBlocks/includes
  */
 
 /**
@@ -16,8 +16,8 @@ namespace SkeletonGutenbergBlocks;
  * This class defines all code necessary to run during the plugin's activation.
  *
  * @since      1.0.0
- * @package    SkeletonGutenbergBlocks
- * @subpackage SkeletonGutenbergBlocks/includes
+ * @package    MyGutenbergBlocks
+ * @subpackage MyGutenbergBlocks/includes
  * @author     Rao <rao@booskills.com>
  */
 class Activator {

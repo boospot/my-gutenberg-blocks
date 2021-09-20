@@ -1,13 +1,13 @@
 <?php
 
-namespace SkeletonGutenbergBlocks;
+namespace MyGutenbergBlocks;
 // exit if file is called directly
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
 // if class already defined, bail out
-if ( class_exists( 'SkeletonGutenbergBlocks\Taxonomy' ) ) {
+if ( class_exists( 'MyGutenbergBlocks\Taxonomy' ) ) {
 	return;
 }
 
@@ -15,8 +15,8 @@ if ( class_exists( 'SkeletonGutenbergBlocks\Taxonomy' ) ) {
 /**
  * This class will create meta boxes for Taxonomies
  *
- * @package    SkeletonGutenbergBlocks
- * @subpackage SkeletonGutenbergBlocks/includes
+ * @package    MyGutenbergBlocks
+ * @subpackage MyGutenbergBlocks/includes
  * @author     Rao <raoabid491@gmail.com>
  */
 class Taxonomy {

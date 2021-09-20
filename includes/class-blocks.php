@@ -1,13 +1,13 @@
 <?php
 
-namespace SkeletonGutenbergBlocks;
+namespace MyGutenbergBlocks;
 // exit if file is called directly
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
 // if class already defined, bail out
-if ( class_exists( 'SkeletonGutenbergBlocks\Blocks' ) ) {
+if ( class_exists( 'MyGutenbergBlocks\Blocks' ) ) {
 	return;
 }
 
@@ -15,8 +15,8 @@ if ( class_exists( 'SkeletonGutenbergBlocks\Blocks' ) ) {
 /**
  * This class will create meta boxes for Shortcodes
  *
- * @package    SkeletonGutenbergBlocks
- * @subpackage SkeletonGutenbergBlocks/includes
+ * @package    MyGutenbergBlocks
+ * @subpackage MyGutenbergBlocks/includes
  */
 class Blocks {
 
@@ -93,7 +93,7 @@ class Blocks {
 	 */
 	public function get_build_url( $file_name_with_sub_dir ) {
 
-		return SKELETON_GUTENBERG_BLOCKS_URL_PATH . trailingslashit( 'build' ) . $file_name_with_sub_dir;
+		return MY_GUTENBERG_BLOCKS_URL_PATH . trailingslashit( 'build' ) . $file_name_with_sub_dir;
 
 	}
 
@@ -102,7 +102,7 @@ class Blocks {
 	 */
 	public function get_build_dir( $file_name_with_sub_dir ) {
 
-		return SKELETON_GUTENBERG_BLOCKS_DIR_PATH . 'build' . DIRECTORY_SEPARATOR . $file_name_with_sub_dir;
+		return MY_GUTENBERG_BLOCKS_DIR_PATH . 'build' . DIRECTORY_SEPARATOR . $file_name_with_sub_dir;
 
 	}
 
@@ -141,7 +141,7 @@ class Blocks {
 			 * plugin_dir_path( MY_PLUGIN ) . 'languages' ) ). For details see
 			 * https://make.wordpress.org/core/2018/11/09/new-javascript-i18n-support-in-wordpress/
 			 */
-			wp_set_script_translations( $this->editor_script_handle, 'plugin-text-domain' );
+			wp_set_script_translations( $this->editor_script_handle, 'my-gutenberg-blocks' );
 		}
 
 		/**

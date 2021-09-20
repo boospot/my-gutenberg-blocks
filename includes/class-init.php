@@ -1,6 +1,6 @@
 <?php
 
-namespace SkeletonGutenbergBlocks;
+namespace MyGutenbergBlocks;
 
 /**
  * The file that defines the core plugin class
@@ -11,8 +11,8 @@ namespace SkeletonGutenbergBlocks;
  * @link       https://booskills.com/rao
  * @since      1.0.0
  *
- * @package    SkeletonGutenbergBlocks
- * @subpackage SkeletonGutenbergBlocks/includes
+ * @package    MyGutenbergBlocks
+ * @subpackage MyGutenbergBlocks/includes
  */
 
 /**
@@ -25,8 +25,8 @@ namespace SkeletonGutenbergBlocks;
  * version of the plugin.
  *
  * @since      1.0.0
- * @package    SkeletonGutenbergBlocks
- * @subpackage SkeletonGutenbergBlocks/includes
+ * @package    MyGutenbergBlocks
+ * @subpackage MyGutenbergBlocks/includes
  * @author     Rao <rao@booskills.com>
  */
 class Init {
@@ -100,15 +100,15 @@ class Init {
 	public function __construct() {
 
 
-		if ( defined( 'SKELETON_GUTENBERG_BLOCKS_VERSION' ) ) {
-			$this->version = SKELETON_GUTENBERG_BLOCKS_VERSION;
+		if ( defined( 'MY_GUTENBERG_BLOCKS_VERSION' ) ) {
+			$this->version = MY_GUTENBERG_BLOCKS_VERSION;
 		} else {
 			$this->version = '1.0.0';
 		}
-		if ( defined( 'SKELETON_GUTENBERG_BLOCKS_PLUGIN_NAME' ) ) {
-			$this->plugin_name = SKELETON_GUTENBERG_BLOCKS_PLUGIN_NAME;
+		if ( defined( 'MY_GUTENBERG_BLOCKS_PLUGIN_NAME' ) ) {
+			$this->plugin_name = MY_GUTENBERG_BLOCKS_PLUGIN_NAME;
 		} else {
-			$this->plugin_name = 'skeleton_gutenberg_blocks';
+			$this->plugin_name = 'my_gutenberg_blocks';
 		}
 
 
@@ -119,7 +119,7 @@ class Init {
 		$this->define_blocks_hooks();
 		$this->define_taxonomy_hooks();
 
-		do_action( 'skeleton_gutenberg_blocks_init_construct' );
+		do_action( 'my_gutenberg_blocks_init_construct' );
 
 	}
 

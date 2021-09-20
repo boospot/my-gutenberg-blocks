@@ -11,21 +11,21 @@
  *
  * @link              https://booskills.com/rao
  * @since             1.0.0
- * @package           SkeletonGutenbergBlocks
+ * @package           MyGutenbergBlocks
  *
  * @wordpress-plugin
- * Plugin Name:       SkeletonGutenbergBlocks
+ * Plugin Name:       MyGutenbergBlocks
  * Plugin URI:        https://boospot.com/
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       This is a plugin to contain some example blocks to understand how blocks works
  * Requires PHP:      7.0
  * Requires at least: 5.0
- * Tested up to:      5.3
+ * Tested up to:      5.8
  * Version:           1.0.0
  * Author:            Rao
  * Author URI:        https://booskills.com/rao
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       plugin-text-domain
+ * Text Domain:       my-gutenberg-blocks
  * Domain Path:       /languages
  */
 
@@ -39,9 +39,9 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'SKELETON_GUTENBERG_BLOCKS_VERSION', '1.0.0' );
+define( 'MY_GUTENBERG_BLOCKS_VERSION', '1.0.0' );
 
-define( 'SKELETON_GUTENBERG_BLOCKS_PLUGIN_NAME', 'skeleton_gutenberg_blocks' );
+define( 'MY_GUTENBERG_BLOCKS_PLUGIN_NAME', 'my_gutenberg_blocks' );
 
 /**
  * Plugin base name.
@@ -49,7 +49,7 @@ define( 'SKELETON_GUTENBERG_BLOCKS_PLUGIN_NAME', 'skeleton_gutenberg_blocks' );
  * Start at version 1.0.0
  */
 /** @noinspection PhpUnused */
-define( 'SKELETON_GUTENBERG_BLOCKS_PLUGIN_BASE_NAME', basename( __FILE__ ) );
+define( 'MY_GUTENBERG_BLOCKS_PLUGIN_BASE_NAME', basename( __FILE__ ) );
 
 
 /**
@@ -58,7 +58,7 @@ define( 'SKELETON_GUTENBERG_BLOCKS_PLUGIN_BASE_NAME', basename( __FILE__ ) );
  * Start at version 1.0.0
  */
 /** @noinspection PhpUnused */
-define( 'SKELETON_GUTENBERG_BLOCKS_DIR_PATH', plugin_dir_path( __FILE__ ) );
+define( 'MY_GUTENBERG_BLOCKS_DIR_PATH', plugin_dir_path( __FILE__ ) );
 
 /**
  * Plugin url to access its resources through browser
@@ -66,7 +66,7 @@ define( 'SKELETON_GUTENBERG_BLOCKS_DIR_PATH', plugin_dir_path( __FILE__ ) );
  * Start at version 1.0.0
  */
 /** @noinspection PhpUnused */
-define( 'SKELETON_GUTENBERG_BLOCKS_URL_PATH', plugin_dir_url( __FILE__ ) );
+define( 'MY_GUTENBERG_BLOCKS_URL_PATH', plugin_dir_url( __FILE__ ) );
 
 /**
  * Composer Auto Loader
@@ -82,20 +82,20 @@ require 'vendor/autoload.php';
  * The code that runs during plugin activation.
  * This action is documented in includes/class-sgb-activator.php
  */
-function skeleton_gutenberg_blocks_activate() {
-	SkeletonGutenbergBlocks\Activator::activate();
+function my_gutenberg_blocks_activate() {
+	MyGutenbergBlocks\Activator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-sgb-deactivator.php
  */
-function skeleton_gutenberg_blocks_deactivate() {
-	SkeletonGutenbergBlocks\Deactivator::deactivate();
+function my_gutenberg_blocks_deactivate() {
+	MyGutenbergBlocks\Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'skeleton_gutenberg_blocks_activate' );
-register_deactivation_hook( __FILE__, 'skeleton_gutenberg_blocks_deactivate' );
+register_activation_hook( __FILE__, 'my_gutenberg_blocks_activate' );
+register_deactivation_hook( __FILE__, 'my_gutenberg_blocks_deactivate' );
 /**
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
@@ -110,10 +110,10 @@ register_deactivation_hook( __FILE__, 'skeleton_gutenberg_blocks_deactivate' );
  *
  * @since    1.0.0
  */
-function skeleton_gutenberg_blocks() {
+function my_gutenberg_blocks() {
 
-	return SkeletonGutenbergBlocks\Init::get_instance();
+	return MyGutenbergBlocks\Init::get_instance();
 
 }
 
-skeleton_gutenberg_blocks();
+my_gutenberg_blocks();

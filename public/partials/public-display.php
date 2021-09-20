@@ -8,8 +8,8 @@
  * @link       https://booskills.com/rao
  * @since      1.0.0
  *
- * @package    SkeletonGutenbergBlocks
- * @subpackage SkeletonGutenbergBlocks/public/partials
+ * @package    MyGutenbergBlocks
+ * @subpackage MyGutenbergBlocks/public/partials
  */
 ?>
 
