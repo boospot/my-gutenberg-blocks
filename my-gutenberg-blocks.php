@@ -80,7 +80,7 @@ require 'vendor/autoload.php';
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/class-sgb-activator.php
+ * This action is documented in includes/class-mgb-activator.php
  */
 function my_gutenberg_blocks_activate() {
 	MyGutenbergBlocks\Activator::activate();
@@ -88,7 +88,7 @@ function my_gutenberg_blocks_activate() {
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/class-sgb-deactivator.php
+ * This action is documented in includes/class-mgb-deactivator.php
  */
 function my_gutenberg_blocks_deactivate() {
 	MyGutenbergBlocks\Deactivator::deactivate();

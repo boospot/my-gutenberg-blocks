@@ -66,9 +66,9 @@ class Blocks {
 		$this->plugin_name = $plugin_name;
 		$this->version     = $version;
 
-		$this->editor_script_handle = 'sgb-block-editor-script';
-		$this->editor_style_handle  = 'sgb-block-editor-style';
-		$this->public_style_handle  = 'sgb-block-style';
+		$this->editor_script_handle = 'mgb-block-editor-script';
+		$this->editor_style_handle  = 'mgb-block-editor-style';
+		$this->public_style_handle  = 'mgb-block-style';
 
 	}
 
@@ -169,7 +169,7 @@ class Blocks {
 
 		// Array of block created in this plugin.
 		$blocks = [
-			'sgb/message',
+			'mgb/message',
 		];
 
 		// Loop through $blocks and register each block with the same script and styles.

@@ -14,7 +14,7 @@
  * - Repeat things for multi site. Once for a single site in the network, once site wide.
  *
  * This file may be updated more in future version of the Boilerplate; however, this is the
- * general sgb and outline for how the file should work.
+ * general mgb and outline for how the file should work.
  *
  * For more information, see the following discussion:
  * https://github.com/tommcfarlin/WordPress-Plugin-Boilerplate/pull/123#issuecomment-28541913
